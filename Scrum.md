@@ -1,4 +1,9 @@
-O que é Scrum?
+# SCRUM
+● O que é Scrum
+● O que é uma Sprint 
+● O que é Daily 
+● Para que serve o Scrum na equipe 
+
 Scrum é uma metodologia focada em organização e desenvolvimento de projetos, onde o product owner (capitão) divide um projeto final chamado de "Shape" em tarefas 
 semanais, as chamadas "Sprints" e o scrum master (gerentes de células) são responsáveis por dividir essas sprints entre o time de desenvolvimento (célula) e 
 monitorar o desenvolvimento delas.
