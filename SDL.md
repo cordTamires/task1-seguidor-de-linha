@@ -6,59 +6,27 @@ Um seguidor de linha é um robô móvel de alta perfomance projetado para se des
 sobre fundo preto. Ele funciona detectando essa linha por meio de sensores e ajustando continuamente o movimento das rodas para permanecer sobre o caminho.
 
 **Principais componentes:**
-- Microcontrolador.
+- Microcontrolador:
 Ele é como a central de controle do robô, ele manda e recebe comunicação dos seus componentes conectado. Lê os dados dos sensores, processa essas informações e decide como os motores devem agir (virar, ir reto, corrigir rota).
 
 ---
 
-2. Buck Converter
+- Buck Converter:
 
-É responsável por fornecer a tensão adequada para os diferentes componentes do robô. Ele converte a tensão da bateria para níveis adequados, mantendo a eficiência energética.
-  
-### Necessidade:
-- O robô precisa de uma fonte de alimentação estável e eficiente. A maioria dos componentes eletrônicos do sistema, como o ESP32 e os sensores, opera em tensões diferentes da bateria principal. O buck converter assegura que os componentes recebam as tensões corretas sem desperdiçar energia.
-
-### Requisitos:
-- **Tensão de entrada**: Compatível com a tensão da bateria do robô (geralmente entre 7,4V e 12V).
-- **Tensão de saída**: Saídas de 5V e 3,3V.
-- **Corrente de saída**: Capacidade para fornecer pelo menos 2A para os componentes.
-  
----
-
-3. Switch On/Off
-
-### Quantidade:
-- 1 unidade
-
-### Especificações de Uso:
-- **Chave liga/desliga**: Será utilizada para controlar o fornecimento de energia do sistema. Isso permite o desligamento completo do robô sem a necessidade de desconectar a bateria.
-
-### Necessidade:
-- Em uma competição, é essencial poder ligar e desligar o robô de forma rápida e segura. Um switch on/off permite a gestão eficiente da energia durante os intervalos das provas.
-
-### Requisitos:
-- **Tensão de operação**: Compatível com a bateria do robô (7,4V a 12V).
-- **Corrente suportada**: Pelo menos 5A, para evitar aquecimento ou falhas com picos de corrente dos motores.
+É responsável por fornecer a tensão adequada para os diferentes componentes do robô. Ele converte a tensão da bateria para níveis adequados, mantendo a eficiência energética. O robô precisa de uma fonte de alimentação estável e eficiente. A maioria dos componentes eletrônicos do sistema, como o ESP32 e os sensores, opera em tensões diferentes da bateria principal. O buck converter assegura que os componentes recebam as tensões corretas sem desperdiçar energia.
 
 ---
-4. Motores 3000 RPM 6V Polulu com Encoder Genérico
-### Quantidade:
-- 2 unidades (para movimentação do robô)
 
-### Especificações de Uso:
-- **Motores DC**: Os motores com encoder permitem controlar a velocidade e o sentido de rotação com precisão. A rotação máxima de 3000 RPM oferece velocidade suficiente para percorrer a pista com eficiência.
-- **Encoder**: O encoder embutido fornece feedback da posição e velocidade do motor, essencial para controlar com precisão a movimentação do robô e realizar ajustes finos na trajetória.
+- Switch On/Off:
   
-### Necessidade:
-- Os motores são responsáveis pela propulsão do robô. O uso de encoders ajuda a garantir o controle fino da velocidade e a capacidade de ajustar a direção e manter o robô na trajetória correta.
+Será utilizada para controlar o fornecimento de energia do sistema. Isso permite o desligamento completo do robô sem a necessidade de desconectar a bateria. 
+Permite a gestão eficiente da energia durante os intervalos das provas.
 
-### Requisitos:
-- **Tensão de operação**: 6V
-- **Corrente de operação**: 1,5A (nominal), até 3A (em pico)
-- **Tipo de Encoder**
+---
+- Motores:
 
-: Incremental, com resolução mínima de 10 pulsos por rotação.
-  
+Os motores com encoder permitem controlar a velocidade e o sentido de rotação com precisão. A rotação máxima de 3000 RPM oferece velocidade suficiente para percorrer a pista com eficiência. Os motores são responsáveis pela propulsão do robô. O uso de encoders ajuda a garantir o controle fino da velocidade e a capacidade de ajustar a direção e manter o robô na trajetória correta.
+
 ---
 
 5. Ponte H DRV8833
