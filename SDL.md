@@ -35,7 +35,7 @@ A ponte H  permite o controle de dois motores DC de forma independente, controla
 
 ---
 
-6. Sensor Lateral:
+- Sensor Lateral:
 
 Os sensores laterais são usados para detectar obstáculos ou bordas laterais da pista. Podem ser usados sensores infravermelhos de distância curta ou ultrassônicos, dependendo do tipo de pista. Os sensores laterais auxiliam o robô a evitar colisões e a manter-se centralizado na pista. São fundamentais para estratégias avançadas, como desviar de obstáculos ou manter uma distância ideal das bordas laterais.
 
