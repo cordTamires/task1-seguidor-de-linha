@@ -29,53 +29,22 @@ Os motores com encoder permitem controlar a velocidade e o sentido de rotação 
 
 ---
 
-5. Ponte H DRV8833
-### Quantidade:
-- 1 unidade
+- Ponte:
 
-### Especificações de Uso:
-- **Driver de motor**: A ponte H DRV8833 permite o controle de dois motores DC de forma independente, controlando a direção e a velocidade através de sinais PWM. Ela protege os circuitos de controle e permite um controle eficaz da movimentação dos motores.
-
-### Necessidade:
-- Este componente é essencial para controlar os motores, uma vez que o ESP32 não pode fornecer corrente suficiente para os motores diretamente. A ponte H também permite mudar a direção dos motores rapidamente, o que é crucial para as curvas e ajustes de direção durante a competição.
-
-### Requisitos:
-- **Tensão de operação**: 4,5V a 13,5V
-- **Corrente máxima por canal**: 1,2A (contínuo), 3,2A (pico)
-- **Entradas de controle**: PWM, IN1/IN2 para direção, STBY para ativação/desativação.
+A ponte H  permite o controle de dois motores DC de forma independente, controlando a direção e a velocidade através de sinais PWM. Ela protege os circuitos de controle e permite um controle eficaz da movimentação dos motores. Este componente é essencial para controlar os motores, permite mudar a direção dos motores rapidamente, o que é crucial para as curvas e ajustes de direção durante a competição.
 
 ---
 
-6. Sensor Lateral QRE1113
+6. Sensor Lateral:
 
-### Quantidade:
-- 2 unidades (um para cada lado do robô)
-
-### Especificações de Uso:
-- **Sensores infravermelhos ou ultrassônicos**: Os sensores laterais são usados para detectar obstáculos ou bordas laterais da pista. Podem ser usados sensores infravermelhos de distância curta ou ultrassônicos, dependendo do tipo de pista.
-
-### Necessidade:
-- Os sensores laterais auxiliam o robô a evitar colisões e a manter-se centralizado na pista. São fundamentais para estratégias avançadas, como desviar de obstáculos ou manter uma distância ideal das bordas laterais.
-
-### Requisitos:
-- **Tensão de operação**: 5V
-- **Distância de detecção**: 2 a 10 cm para infravermelho ou 2 a 30 cm para ultrassônico.
-- **Saída**: Sinal digital ou analógico para leitura pelo ESP32.
+Os sensores laterais são usados para detectar obstáculos ou bordas laterais da pista. Podem ser usados sensores infravermelhos de distância curta ou ultrassônicos, dependendo do tipo de pista. Os sensores laterais auxiliam o robô a evitar colisões e a manter-se centralizado na pista. São fundamentais para estratégias avançadas, como desviar de obstáculos ou manter uma distância ideal das bordas laterais.
 
 ---
 
-7. Módulo de 8 Sensores Frontal QRE1113
-### Quantidade:
-- 1 unidade
+- Módulo de 8 Sensores Frontal:
 
-### Especificações de Uso:
-- **Array de sensores infravermelhos**: O módulo de sensores será responsável pela detecção da linha que o robô deve seguir. O conjunto de 8 sensores infravermelhos permite uma leitura precisa da posição da linha em relação ao robô, garantindo um controle fino da trajetória.
+O módulo de sensores será responsável pela detecção da linha que o robô deve seguir. O conjunto de 8 sensores infravermelhos permite uma leitura precisa da posição da linha em relação ao robô, garantindo um controle fino da trajetória. O array de sensores é o principal componente que permite ao robô seguir a linha. A precisão deste módulo é crítica para garantir que o robô seja capaz de seguir a linha de forma suave e reagir rapidamente a mudanças no trajeto.
 
-### Necessidade:
-- O array de sensores é o principal componente que permite ao robô seguir a linha. A precisão deste módulo é crítica para garantir que o robô seja capaz de seguir a linha de forma suave e reagir rapidamente a mudanças no trajeto.
-
-### Requisitos:
-- **Tensão de operação**: 5V
 - **Tipo de sensor**: Infravermelho (IR) para detecção de contraste.
 - **Saída**: 8 sinais digitais ou analógicos, indicando a presença da linha sob cada sensor.
 - **Largura de detecção**: Deve cobrir a largura total da pista, com sensores espaçados uniformemente para garantir uma leitura estável.
