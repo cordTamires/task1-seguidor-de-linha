@@ -45,7 +45,5 @@ Os sensores laterais são usados para detectar obstáculos ou bordas laterais da
 
 O módulo de sensores será responsável pela detecção da linha que o robô deve seguir. O conjunto de 8 sensores infravermelhos permite uma leitura precisa da posição da linha em relação ao robô, garantindo um controle fino da trajetória. O array de sensores é o principal componente que permite ao robô seguir a linha. A precisão deste módulo é crítica para garantir que o robô seja capaz de seguir a linha de forma suave e reagir rapidamente a mudanças no trajeto.
 
-- **Tipo de sensor**: Infravermelho (IR) para detecção de contraste.
-- **Saída**: 8 sinais digitais ou analógicos, indicando a presença da linha sob cada sensor.
-- **Largura de detecção**: Deve cobrir a largura total da pista, com sensores espaçados uniformemente para garantir uma leitura estável.
+
 
